@@ -5,6 +5,11 @@
  *
  * Return: Always 0 (Success)
  */
+int main(void)
+{
+	print_alphabet();
+	return (0);
+}
 void print_alphabet(void)
 {
 	char letter;
@@ -12,10 +17,4 @@ void print_alphabet(void)
 	for (letter = 'a'; letter <= 'z'; letter++)
 		putchar(letter);
 	putchar('\n');
-}
-
-int main(void)
-{
-	print_alphabet();
-	return (0);
 }
