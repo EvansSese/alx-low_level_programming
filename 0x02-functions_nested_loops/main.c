@@ -7,7 +7,7 @@ int main()
 {
 	int r;
 
-	r = _abs(-1);
+	r = print_last_digit(98);
 	printf("%d\n", r);
 	return (0);
 }
