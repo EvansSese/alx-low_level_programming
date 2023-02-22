@@ -7,11 +7,9 @@ int main()
 {
 	int r;
 
-	r = _isalpha('H');
-	putchar(r + '0');
-	r = _isalpha('o');
-	putchar(r + '0');
-	r = _isalpha(';');
+	r = print_sign(98);
+	putchar(',');
+	putchar(' ');
 	putchar(r + '0');
 	putchar('\n');
 	return (0);
