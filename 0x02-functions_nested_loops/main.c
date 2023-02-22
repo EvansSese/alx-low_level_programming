@@ -7,10 +7,7 @@ int main()
 {
 	int r;
 
-	r = print_sign(98);
-	putchar(',');
-	putchar(' ');
-	putchar(r + '0');
-	putchar('\n');
+	r = _abs(-1);
+	printf("%d\n", r);
 	return (0);
 }
