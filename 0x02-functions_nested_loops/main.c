@@ -7,11 +7,11 @@ int main()
 {
 	int r;
 
-	r = _islower('H');
+	r = _isalpha('H');
 	putchar(r + '0');
-	r = _islower('o');
+	r = _isalpha('o');
 	putchar(r + '0');
-	r = _islower(108);
+	r = _isalpha(';');
 	putchar(r + '0');
 	putchar('\n');
 	return (0);
