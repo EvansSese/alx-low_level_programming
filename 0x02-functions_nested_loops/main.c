@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include "main.h"
-
+/**
+ * @r - variable to hold the return value
+ */
 int main()
 {
 	int r;
