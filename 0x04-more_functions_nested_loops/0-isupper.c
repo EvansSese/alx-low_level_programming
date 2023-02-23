@@ -13,7 +13,7 @@ int _isupper(int c)
 
 	letter = 'A';
 	while (letter <= 'Z')
-		if (letter == c)
+		if (c == letter)
 			return (1);
 		letter++;
 	return (0);
