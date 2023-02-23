@@ -10,7 +10,7 @@ int main(void)
 {
 	int r;
 
-	r = _isupper('E');
+	r = _isdigit('E');
 	putchar(r + '0');
 	return (0);
 }
