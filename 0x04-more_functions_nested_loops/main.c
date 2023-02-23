@@ -2,6 +2,7 @@
 #include "main.h"
 /**
  * main - Entry point
+ * @r - Parameter to hold returned value
  *
  * Return: Always 0 (Success)
  */
