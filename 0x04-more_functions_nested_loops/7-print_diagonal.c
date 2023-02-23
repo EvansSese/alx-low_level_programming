@@ -3,8 +3,7 @@
 /**
  * print_diagonal - Prints diagonal line
  * @n: Number of \ characters
- * @len: length of diagonal
- * @space: Spacing to achieve diagonal
+ *
  */
 void print_diagonal(int n)
 {
