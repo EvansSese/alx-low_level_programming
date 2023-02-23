@@ -5,7 +5,7 @@
  *
  * Return: Always 0 (Success)
  */
-int main(void)
+int fizz_buzz(void)
 {
 	int num;
 
@@ -19,7 +19,7 @@ int main(void)
 			printf("Buzz");
 		else
 			printf("%d", num);
-		if (numm == 100)
+		if (num == 100)
 			continue;
 		printf(" ");
 	}

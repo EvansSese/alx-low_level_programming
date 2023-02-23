@@ -7,6 +7,6 @@
  */
 int main(void)
 {
-	print_diagonal(0);
+	fizz_buzz();
 	return (0);
 }
