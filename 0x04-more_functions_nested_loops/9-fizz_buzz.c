@@ -1,11 +1,10 @@
 #include <stdio.h>
-#include "main.h"
 /**
  * main - Prints Fizz-Buzz
  *
  * Return: Always 0 (Success)
  */
-int fizz_buzz(void)
+int main(void)
 {
 	int num;
 
