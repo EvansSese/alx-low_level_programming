@@ -2,15 +2,11 @@
 #include "main.h"
 /**
  * main - Entry point
- * @r - Parameter to hold returned value
  *
  * Return: Always 0 (Success)
  */
 int main(void)
 {
-	int r;
-
-	r = _isdigit('E');
-	putchar(r + '0');
+	printf("%d\n", mul(5, 5));
 	return (0);
 }
