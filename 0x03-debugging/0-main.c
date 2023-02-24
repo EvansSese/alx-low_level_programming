@@ -1,14 +1,16 @@
 #include <stdio.h>
 #include "main.h"
 /**
- * main - Entry point
- * @r - variable to hold return value
- *
- * Return: Always 0 (Success)
+ * main - test function that prints integer is positive or negative
+ * Return: 0
  */
+
 int main(void)
 {
-	int r;
+	int i;
+
+	i= 98;
+	positive_or_negative(i);
 
 	return (0);
 }
