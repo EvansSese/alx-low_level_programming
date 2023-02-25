@@ -1,9 +1,9 @@
 #include <stdio.h>
 #include "main.h"
 /**
- * jack bauer - function to print every minute
- * hour - hour parameter
- * minute - minute parameter
+ * jack_bauer - function to print every minute
+ * @hour - hour parameter
+ * @minute - minute parameter
  */
 void jack_bauer(void)
 {
