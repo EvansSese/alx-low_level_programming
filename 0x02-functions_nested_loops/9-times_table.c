@@ -13,7 +13,7 @@ void times_table(void)
 		{
 			prod = num * mult;
 
-			if (prod <= 9)
+			if (prod <= 9 && mult != 0)
 			{
 				_putchar(' ');
 			}
