@@ -16,5 +16,4 @@ void print_rev(char *s)
 		printf("%c", s[i]);
 		i--;
 	}
-	puts(rev_str);
 }
