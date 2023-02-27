@@ -7,5 +7,15 @@
  */
 void print_rev(char *s)
 {
-	printf("%s", strrev(s));
+	int len = strlen(s);
+	int j;
+	int i = len - 1;
+	char rev_str[len];
+
+	for (j = 0; j < len; j++)
+	{
+		rev_str[i] = s[j];
+		i--;
+	}
+	puts(rev_str);
 }
