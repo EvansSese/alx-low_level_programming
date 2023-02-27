@@ -13,7 +13,7 @@ void rev_string(char *s)
 
 	for (j = 0; j < len; j++)
 	{
-		printf("%c", s[j]);
+		printf("%c", s[i]);
 		i--;
 	}
 	printf("\n");
