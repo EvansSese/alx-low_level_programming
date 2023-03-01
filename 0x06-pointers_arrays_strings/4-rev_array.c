@@ -2,7 +2,7 @@
 #include <string.h>
 #include "main.h"
 /**
- * rev_array - Function to return an interger
+ * reverse_array - Function to return an interger
  * @a: Array to be reversed
  * @n: Length of the string
  */
