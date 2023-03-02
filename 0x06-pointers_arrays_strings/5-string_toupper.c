@@ -2,7 +2,8 @@
 #include <string.h>
 #include "main.c"
 /**
- * string_toupper - Function to convert lowercase to upper
+ * string_toupper - Function to convert 
+ * lowercase to upper
  * @str: String parameter
  *
  * Return: Returns a pointer
