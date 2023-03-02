@@ -7,7 +7,7 @@
  *
  * Return: Returns a pointer
  */
-char *string_toupper(char *str)
+char *string_toupper(char *)
 {
 	while (*str != '\0')
 	{
