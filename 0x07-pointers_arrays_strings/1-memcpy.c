@@ -3,8 +3,8 @@
 #include "main.h"
 /**
  * _memcpy - Function to copy memory area
- * @*dest: Destination area
- * @*src: Source area
+ * @dest: Destination area
+ * @src: Source area
  * @n: Integer parameter
  *
  * Return: Returns a pointer to dest
