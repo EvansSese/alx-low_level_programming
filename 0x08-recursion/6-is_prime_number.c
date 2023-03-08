@@ -7,9 +7,6 @@
  *
  * Return: 1 if prime, else 0
  */
-/**
- * is_divisible - Function to check for division
- */
 int is_divisible(int n, int i);
 int is_divisible(int n, int i)
 {
@@ -20,6 +17,10 @@ int is_divisible(int n, int i)
 	else
 		return (is_divisible(n, i + 1));
 }
+
+/**
+ * is_divisible - Function to check divisibility
+ */
 int is_prime_number(int n)
 {
 	if (n < 2)
