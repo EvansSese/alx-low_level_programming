@@ -2,7 +2,10 @@
 #include "main.h"
 /**
  * _sqrt_recursion - Function to find root
+ * _sqrt_helper - Helper function
  * @n: Number
+ * @low: Lower limit
+ * @high: Higher limit
  *
  * Return: The sqrt
  */
