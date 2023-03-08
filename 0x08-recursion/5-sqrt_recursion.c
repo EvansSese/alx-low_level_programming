@@ -15,12 +15,11 @@ int _sqrt_recursion(int n)
 }
 int _sqrt_helper(int n, int low, int high)
 {
-	if (low > high)
-		return (-1);
-	
 	int mid = (low + high) / 2;
 	int guess = mid * mid;
 
+	if (low > high)
+		return (-1);
 	if (guess == n)
 		return (mid);
 	else if (guess > n)
