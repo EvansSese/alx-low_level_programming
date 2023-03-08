@@ -7,6 +7,9 @@
  *
  * Return: 1 if prime, else 0
  */
+/**
+ * is_divisible - Function to check for division
+ */
 int is_divisible(int n, int i);
 int is_divisible(int n, int i)
 {
