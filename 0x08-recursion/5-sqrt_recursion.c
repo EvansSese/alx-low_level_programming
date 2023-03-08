@@ -1,8 +1,8 @@
 #include <stdio.h>
 #include "main.h"
 /**
- * _sqrt_recursion - Function to find root
- * _sqrt_helper - Helper function
+ * _sqrt_helper - Function to help find root
+ * _sqrt_recursion - Function to find sqrt
  * @n: Number
  * @low: Lower limit
  * @high: Higher limit
