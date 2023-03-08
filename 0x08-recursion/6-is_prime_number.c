@@ -15,7 +15,7 @@ int is_divisible(int n, int i)
 	else if (n % i == 0)
 		return (1);
 	else
-		return is_divisible(n, i + 1);
+		return (is_divisible(n, i + 1));
 }
 int is_prime_number(int n)
 {
