@@ -21,6 +21,5 @@ char *_strdup(char *str)
 		return (NULL);
 	}
 	memcpy(new_str, str, len + 1);
-	free(new_str);
 	return (new_str);
 }
