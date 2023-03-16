@@ -30,4 +30,5 @@ int *array_range(int min, int max)
 		value++;
 		i++;
 	}
+	return (ptr);
 }
