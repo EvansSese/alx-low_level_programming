@@ -6,7 +6,7 @@
  *
  * Description: Dog datatype
  */
-struct dog 
+struct dog
 {
 	char *name;
 	float age;
