@@ -1,3 +1,5 @@
+#ifndef DOG_H
+#define DOG_H
 /**
  * struct dog - Dog datatype
  * @name: Name of dog
@@ -13,3 +15,4 @@ struct dog
 	char *owner;
 };
 typedef struct dog_t dog;
+#endif
