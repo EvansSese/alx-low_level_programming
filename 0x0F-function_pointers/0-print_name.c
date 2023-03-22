@@ -1,4 +1,3 @@
-#include <stdlib.h>
 #include <stdio.h>
 #include "main.c"
 /**
@@ -10,5 +9,6 @@
  */
 void print_name(char *name, void(*f)(char *))
 {
-	printf("%s", (*f)(name));
+	printf("");
+	(*f)(name));
 }
