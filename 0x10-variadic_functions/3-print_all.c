@@ -3,10 +3,11 @@
 /**
  * print_all - Function to print all
  * @format: Format to be used
+ * @char *: String to print
  *
  * Return: Nothing
  */
-void print_all(const char * const format, ...)
+void print_all(const char *, const format, ...)
 {
 	va_list arg_list;
 	char c_list;
@@ -55,4 +56,3 @@ void print_all(const char * const format, ...)
 	print("\n");
 	va_end(arg_list);
 }
-
