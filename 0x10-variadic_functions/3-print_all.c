@@ -3,7 +3,7 @@
 /**
  * print_all - Function to print all
  * @format: Format to be used
- * @char *: String to print
+ * @char: String to be printed
  *
  * Return: Nothing
  */
