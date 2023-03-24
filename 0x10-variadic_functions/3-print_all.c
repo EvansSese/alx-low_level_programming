@@ -14,24 +14,27 @@ void print_all(const char * const format, ...)
 	int i_val;
 	double f_val;
 	char *s_val;
-	int i, j = 0;
+	int printed = 0;
 
 	va_start(arg_list, format);
-	while (format && format[j])
+	while ((c = *(format++) != '\0'))
 	{
-		switch (format[j])
+		switch (c)
 		{
 			case 'c':
 				c_val = (char)va_arg(arg_list, int);
 				printf("%c", c_val);
+				printed = 1;
 				break;
 			case 'i':
 				i_val = va_arg(arg_list, int);
 				printf("%d", i_val);
+				printed = 1;
 				break;
 			case 'f':
 				f_val = va_arg(arg_list, double);
 				printf("%f", f_val);
+				printed = 1;
 				break;
 			case 's':
 				s_val = va_arg(arg_list, char *);
@@ -43,14 +46,15 @@ void print_all(const char * const format, ...)
 				{
 					printf("(nil)");
 				}
+				printed = 1;
 				break;
 			default:
 				break;
 		}
-		j++;
-		if (format && format[j])
+		if (*(format) != '\0' && printed)
 		{
 			printf(", ");
+			printed = 0;
 		}
 	}
 	print("\n");
