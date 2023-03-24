@@ -1,6 +1,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include "3-calc.h"
+
 /**
  * main - entry point
  * @argc: the number of command-line arguments
@@ -28,12 +29,15 @@ int main(int argc, char *argv[])
         printf("Error\n");
         return (99);
     }
-	if ((argv[2][0] == '/' || argv[2][0] == '%') && b == 0)
-	{
-		printf("Error\n");
-		return (100);
-	}
-	result = op_func(a, b);
-	printf("%d\n", result);
-	return (0);
+
+    if ((argv[2][0] == '/' || argv[2][0] == '%') && b == 0)
+    {
+        printf("Error\n");
+        return (100);
+    }
+
+    result = op_func(a, b);
+    printf("%d\n", result);
+
+    return (0);
 }
