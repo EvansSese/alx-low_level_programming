@@ -7,10 +7,10 @@
  *
  * Return: Nothing
  */
-void print_all(const char *, const format, ...)
+void print_all(const char * const format, ...)
 {
 	va_list arg_list;
-	char c_list;
+	char c_val;
 	int i_val;
 	double f_val;
 	char *s_val;
