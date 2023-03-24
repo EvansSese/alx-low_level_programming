@@ -22,8 +22,8 @@ void print_all(const char * const format, ...)
 		switch (c_val)
 		{
 			case 'c':
-				c_val = (char)va_arg(arg_list, int);
-				printf("%c", c_val);
+				i_val = va_arg(arg_list, int);
+				printf("%c", i_val);
 				printed = 1;
 				break;
 			case 'i':
@@ -37,8 +37,8 @@ void print_all(const char * const format, ...)
 				printed = 1;
 				break;
 			case 's':
-				s_val = va_arg(arg_list, char *);
-				if (s_val)
+				s_val = va_arg(arg_list, char*);
+				if (s_val != NULL)
 				{
 					printf("%s", s_val);
 				}
