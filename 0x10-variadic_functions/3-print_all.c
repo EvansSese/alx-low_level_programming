@@ -7,44 +7,44 @@
  *
  * Return: Nothing
  */
-void print_all(const char* const format, ...)
+void print_all(const char * const format, ...)
 {
-	va_list arg_list;
-	char c_val;
-	int i_val;
-	double f_val;
-	char* s_val;
+	va_list args;
+	char c;
+	int i;
+	float f;
+	char *s;
 	int printed = 0;
 
-	va_start(arg_list, format);
-	while ((c_val = *(format++)) != '\0')
+	va_start(args, format);
+	while((c = *(format++)) != '\0')
 	{
-		switch (c_val)
+		switch (c)
 		{
 			case 'c':
-				i_val = va_arg(arg_list, int);
-				printf("%c", i_val);
+				i = va_arg(args, int);
+				printf("%c", i);
 				printed = 1;
 				break;
 			case 'i':
-				i_val = va_arg(arg_list, int);
-				printf("%d", i_val);
+				i = va_arg(args, int);
+				printf("%d", i);
 				printed = 1;
 				break;
 			case 'f':
-				f_val = (float) va_arg(arg_list, double);
-				printf("%f", f_val);
+				f = (float) va_arg(args, double);
+				printf("%f", f);
 				printed = 1;
 				break;
 			case 's':
-				s_val = va_arg(arg_list, char*);
-				if (s_val != NULL)
+				s = va_arg(args, char *);
+				if (s == NULL)
 				{
-					printf("%s", s_val);
+					printf("(nil)");
 				}
 				else
 				{
-					printf("(nil)");
+					printf("%s", s);
 				}
 				printed = 1;
 				break;
@@ -57,6 +57,6 @@ void print_all(const char* const format, ...)
 			printed = 0;
 		}
 	}
-	print("\n");
-	va_end(arg_list);
+	va_end(args);
+	printf("\n");
 }
