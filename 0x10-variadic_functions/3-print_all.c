@@ -13,13 +13,13 @@ void print_all(const char * const format, ...)
 	char c_val;
 	int i_val;
 	double f_val;
-	char *s_val;
+	char* s_val;
 	int printed = 0;
 
 	va_start(arg_list, format);
-	while ((c = *(format++)) != '\0')
+	while ((c_val = *(format++)) != '\0')
 	{
-		switch (c)
+		switch (c_val)
 		{
 			case 'c':
 				c_val = (char)va_arg(arg_list, int);
