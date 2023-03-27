@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "dog.h"
-#include "main.h"
 /**
  * init_dog - Function to initialize the dog struct
  * @d: Dog param
@@ -11,7 +10,6 @@
  *
  * Return: Nothing
  */
-void init_dog(struct dog *d, char *name, float age, char *owner);
 void init_dog(struct dog *d, char *name, float age, char *owner)
 {
 	d->name = name;
