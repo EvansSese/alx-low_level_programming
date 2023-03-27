@@ -18,12 +18,12 @@ void print_all(const char * const format, ...)
 	int printed = 0;
 
 	va_start(args, format);
-	while((c = *(format)) != '\0')
+	while ((c = *(format)) != '\0')
 	{
 		switch (c)
 		{
 			case 'c':
-				i = va_arg(args, int);
+				i = (char) va_arg(args, int);
 				printf("%c", i);
 				printed = 1;
 				break;
