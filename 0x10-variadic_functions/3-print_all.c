@@ -42,11 +42,9 @@ void print_all(const char * const format, ...)
 				if (s == NULL)
 				{
 					printf("(nil)");
+					break;
 				}
-				if (s != NULL)
-				{
-					printf("%s", s);
-				}
+				printf("%s", s);
 				printed = 1;
 				break;
 			default:
