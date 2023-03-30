@@ -1,6 +1,7 @@
 #include <stdio.h>
 /**
  * before_main - Function that runs before main
+ * @constructor: Constructor
  *
  * Return: Nothing
  */
