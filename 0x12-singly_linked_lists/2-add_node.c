@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 #include "lists.h"
 /**
  * add_node - Function to add node
@@ -20,5 +21,5 @@ list_t *add_node(list_t **head, const char *str)
 	temp->len = strlen(strdup(str));
 	temp->next = *head;
 	*head = temp;
-	return (head);
+	return (*head);
 }
