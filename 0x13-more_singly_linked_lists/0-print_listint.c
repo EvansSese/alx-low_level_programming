@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include "lists.h"
 /**
- * print_listin - Prints list
+ * print_listint - Prints list
  * @h: Pointer to list
  *
  * Return: Return int
