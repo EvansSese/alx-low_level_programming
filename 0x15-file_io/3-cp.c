@@ -51,12 +51,12 @@ int main(int argc, char *argv[])
 	}
 	if (close(fp_from) == -1)
 	{
-		dprintf(STDERR_FILENO, "Error: Can't close file %d\n", fp_from);
+		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fp_from);
 		exit(100);
 	}
 	if (close(fp_to) == -1)
 	{
-		dprintf(STDERR_FILENO, "Error: Can't close file %d\n", fp_to);
+		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fp_to);
 		exit(100);
 	}
 	return (0);
