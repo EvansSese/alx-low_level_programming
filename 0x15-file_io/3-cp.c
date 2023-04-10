@@ -7,7 +7,7 @@
 /**
  * main - Copies files
  * @argc: Argument
- * @argv[]: Second arg
+ * @argv: Second arg
  *
  * Return: Int
  */
