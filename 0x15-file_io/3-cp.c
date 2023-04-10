@@ -13,7 +13,7 @@
 int main(int argc, char *argv[])
 {
 	int fp_from, fp_to;
-	char buff(BUFF_SIZE);
+	char buff[BUFF_SIZE];
 	ssize_t num_read;
 	ssize_t num_written;
 
