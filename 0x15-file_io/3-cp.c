@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include <unistd.h>
 #include <fcntl.h>
+#ifndef BUFF_SIZE
 #define BUFF_SIZE 1024
 /**
  * main - Copies files
@@ -60,3 +61,4 @@ int main(int argc, char *argv[])
 	}
 	return (0);
 }
+#endif
