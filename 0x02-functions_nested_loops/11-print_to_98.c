@@ -1,7 +1,8 @@
 #include <stdio.h>
 /**
  * print_to_98 - This function prints from n to print_to_98
- * n: Starting point
+ * @n: Starting point
+ * 
  * Return: int of sum
  */
 void print_to_98(int n)
@@ -13,14 +14,20 @@ void print_to_98(int n)
   {
     for (i = n; n <= 98; n++)
     {
-      printf("%d, ", n);
+      printf("%d", n);
+      if (i != 98) {
+        printf(", ");
+      }
     }
   }
   else
   {
     for (i = n; n >= 98; n--)
     {
-      printf("%d, ", n);
+      printf("%d", n);
+      if (i != 98) {
+        printf(", ");
+      }
     }
   }
   printf("\n");
