@@ -2,8 +2,8 @@
 
 /**
  * add - This function adds number
- * a: First number
- * b: Second number
+ *a: First number
+ *b: Second number
  *
  * Return: Sum
  */
