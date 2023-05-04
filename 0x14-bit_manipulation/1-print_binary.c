@@ -7,15 +7,20 @@
  */
 void print_binary(unsigned long int n)
 {
-	int i;
+	int i, j = 0;
 
-	for (i = (sizeof(unsigned long int) * 8) - 1; i >= 1; i--)
+	for (i = (sizeof(unsigned long int) * 8) - 1; i >= 0; i--)
 	{
 		if (n & (1ul << i))
 		{
 			_putchar('1');
+			j++;
 		}
-		else
+		else if (j)
+		{
+			_putchar('0');
+		}
+		if (!j)
 		{
 			_putchar('0');
 		}
