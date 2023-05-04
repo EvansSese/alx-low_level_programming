@@ -11,7 +11,7 @@ void print_binary(unsigned long int n)
 
 	for (i = (sizeof(unsigned long int) * 8) - 1; i >= 0; i--)
 	{
-		if (n & (1ul << i))
+		if (1 & (n >> i))
 		{
 			_putchar('1');
 			j++;
