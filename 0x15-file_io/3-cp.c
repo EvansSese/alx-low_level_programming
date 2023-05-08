@@ -1,9 +1,4 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <unistd.h>
-#include <fcntl.h>
-#ifndef BUFF_SIZE
-#define BUFF_SIZE 1024
+#include "main.h"
 /**
  * main - Copies files
  * @argc: Argument
@@ -15,8 +10,7 @@ int main(int argc, char *argv[])
 {
 	int fp_from, fp_to;
 	char buff[BUFF_SIZE];
-	ssize_t num_read;
-	ssize_t num_written;
+	ssize_t num_read, num_written;
 
 	if (argc != 3)
 	{
