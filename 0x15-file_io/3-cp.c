@@ -1,4 +1,6 @@
 #include "main.h"
+#ifndef BUFF_SIZE
+#define BUFF_SIZE 1024
 /**
  * main - Copies files
  * @argc: Argument
