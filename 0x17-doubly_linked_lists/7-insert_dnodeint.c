@@ -24,6 +24,11 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 		current = current->next;
 	}
 	current = *h;
+	if (idx > dlist_len)
+	{
+		free(new_node);
+		return (NULL);
+	}
 	if (idx == 0)
 	{
 		new_node->next = current;
