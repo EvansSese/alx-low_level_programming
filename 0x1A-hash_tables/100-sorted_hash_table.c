@@ -38,16 +38,12 @@ int shash_table_set(shash_table_t *ht, const char *key, const char *value)
 
 	if (ht == NULL || key == NULL || strcmp(key, "") == 0)
 		return (0);
-
 	index = key_index((const unsigned char *)key, ht->size);
-
 	new_node = malloc(sizeof(shash_node_t));
 	if (new_node == NULL)
 		return (0);
-
 	key_dup = strdup(key);
 	value_dup = strdup(value);
-
 	if (key_dup == NULL || value_dup == NULL)
 	{
 		free(new_node);
@@ -55,18 +51,15 @@ int shash_table_set(shash_table_t *ht, const char *key, const char *value)
 		free(value_dup);
 		return (0);
 	}
-
 	new_node->key = key_dup;
 	new_node->value = value_dup;
 	new_node->next = ht->array[index];
 	new_node->sprev = NULL;
 	new_node->snext = NULL;
-
 	if (ht->array[index] != NULL)
 		ht->array[index]->sprev = new_node;
 
 	ht->array[index] = new_node;
-
 	if (ht->shead == NULL || strcmp(key, ht->shead->key) < 0)
 	{
 		new_node->snext = ht->shead;
@@ -77,16 +70,14 @@ int shash_table_set(shash_table_t *ht, const char *key, const char *value)
 	else
 	{
 		shash_node_t *current = ht->shead;
+
 		while (current->snext != NULL && strcmp(key, current->snext->key) > 0)
 			current = current->snext;
-
 		new_node->snext = current->snext;
 		new_node->sprev = current;
-
 		if (current->snext != NULL)
 			current->snext->sprev = new_node;
 		current->snext = new_node;
-
 		if (new_node->snext == NULL)
 			ht->stail = new_node;
 	}
@@ -100,14 +91,12 @@ char *shash_table_get(const shash_table_t *ht, const char *key)
 
 	if (ht == NULL || key == NULL)
 		return (NULL);
-
 	index = key_index((const unsigned char *)key, ht->size);
 	current = ht->array[index];
 	while (current != NULL)
 	{
 		if (strcmp(current->key, key) == 0)
 			return (current->value);
-
 		current = current->next;
 	}
 	return (NULL);
@@ -119,7 +108,6 @@ void shash_table_print(const shash_table_t *ht)
 
 	if (ht == NULL)
 		return;
-
 	current = ht->shead;
 	printf("{");
 	while (current != NULL)
@@ -138,7 +126,6 @@ void shash_table_print_rev(const shash_table_t *ht)
 
 	if (ht == NULL)
 		return;
-
 	current = ht->stail;
 	printf("{");
 	while (current != NULL)
@@ -157,7 +144,6 @@ void shash_table_delete(shash_table_t *ht)
 
 	if (ht == NULL)
 		return;
-
 	for (i = 0; i < ht->size; i++)
 	{
 		shash_node_t *current = ht->array[i];
@@ -170,7 +156,6 @@ void shash_table_delete(shash_table_t *ht)
 			current = next;
 		}
 	}
-
 	free(ht->array);
 	free(ht);
 }
